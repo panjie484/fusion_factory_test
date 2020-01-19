@@ -4,7 +4,7 @@ require 'big_commerce/client'
 require 'big_commerce/service'
 
 BigCommerce::Client.configure(
-  base_url: File.join('https://api.bigcommerce.com/stores', ENV.fetch('STORE_HASH'), 'v3'), 
+  base_url: File.join(ENV.fetch('BC_HOST'), 'stores', ENV.fetch('STORE_HASH'), 'v3'), 
   x_auth_client: ENV.fetch('X_AUTH_CLIENT'), 
   x_auth_token: ENV.fetch('X_AUTH_TOKEN')
 )
