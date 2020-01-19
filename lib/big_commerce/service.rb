@@ -42,8 +42,10 @@ module BigCommerce
         BigCommerce::Client.request('get', path, params)
       end
 
-
-    
+      def create_a_product_image(product_id, params)
+        path = File.join(PRODUCTS_PATH, product_id, 'images')
+        BigCommerce::Client.request('post', path, params)
+      end
     end
   end
 end
