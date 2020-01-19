@@ -7,6 +7,5 @@ module Products
     def create_product
       BigCommerce::Service.create_product(@params)
     end
-
   end 
 end

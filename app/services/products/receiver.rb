@@ -1,6 +1,5 @@
 module Products
   class Receiver
-
     def initialize(params)
       @params = params
     end
