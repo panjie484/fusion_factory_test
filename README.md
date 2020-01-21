@@ -4,6 +4,8 @@
 
 For saving time, I only use the Required Fields, and what this test needs to save into the database.
 
+ENV variables on .env file. (If the ENV variables are real, they should be encrypted, for example by gem 'dotgpg')
+Big Commerce Configure on config/initializers/big_commerce.rb
 Big Commerce Client on lib/big_commerce/client.rb  
 Big Commerce Services on lib/big_commerce/service.rb  
 
